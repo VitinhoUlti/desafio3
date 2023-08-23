@@ -13,6 +13,14 @@ function msk(){
         contagem.style.opacity = 0;
     }
     else{
+        let a = Number(inicio.value)
+        let b = Number(fim.value)
+        let d = Number(passos.value)
+        let c = a;
         
+        for(let c = a; c<=b; c+=d){
+            msg.innerHTML += `👉🏻${c} `
+        }
+        msg.innerHTML += `\u{2764}`
     }
 }
