@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>Verificador de Idade</h1></header>
+    <section>
+            <p>
+            <label for="idate">
+               Ano de nascimento:
+            </label>
+            <input type="number" name="date" id="idate" required min="1900" max="2100" value="1900" placeholder="Ano">
+            </p>
+
+            <p>
+            <label for="isexo">Gênero:</label>
+            <input type="radio" name="sexo" id="isexo" checked>
+            <label for="isexo">Masculino</label> 
+            <input type="radio" name="sexo" id="ifeminino">
+            <label for="ifeminino">
+                Feminino
+            </label>
+            </p>
+
+            <p>
+            <input type="button" value="Aperte" onclick="msk()">
+            </p>
+        <div id="msg" class="item"></div>
+        <div id="foto" class="item"></div>
+    </section>
+    <footer>Site criado por Vitor Miguel &copy;</footer>
+    <script src="idade.js"></script>
+</body>
+</html>
