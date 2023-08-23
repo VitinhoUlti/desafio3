@@ -12,15 +12,23 @@ function msk(){
         window.alert("conta invalida")
         contagem.style.opacity = 0;
     }
-    else{
+    else {
         let a = Number(inicio.value)
         let b = Number(fim.value)
         let d = Number(passos.value)
         let c = a;
         
+        if(a<b){
         for(let c = a; c<=b; c+=d){
             msg.innerHTML += `👉🏻${c} `
         }
         msg.innerHTML += `\u{2764}`
+      }else{
+        for(let c = a; c>=b; c-=d){
+            msg.innerHTML += `👉🏻${c} `
+        }
+        msg.innerHTML += `\u{2764}`
+      }
     }
+    
 }
