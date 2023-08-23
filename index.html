@@ -7,32 +7,34 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header><h1>Verificador de Idade</h1></header>
+    <header><h1>Vamos Contar</h1></header>
     <section>
             <p>
-            <label for="idate">
-               Ano de nascimento:
+            <label for="iinicio">
+               Inicio:
             </label>
-            <input type="number" name="date" id="idate" required min="1900" max="2100" value="1900" placeholder="Ano">
+            <input type="number" name="inicio" id="iinicio" required value="1" placeholder="numero inicial...">
             </p>
 
             <p>
-            <label for="isexo">Gênero:</label>
-            <input type="radio" name="sexo" id="isexo" checked>
-            <label for="isexo">Masculino</label> 
-            <input type="radio" name="sexo" id="ifeminino">
-            <label for="ifeminino">
-                Feminino
-            </label>
+            <label for="ifim">Fim:</label>
+            <input type="number" name="fim" id="ifim" required value="2" placeholder="numero final...">
+            </p>
+
+            <p>
+            <label for="ipassos">Passos:</label>
+            <input type="number" name="passos" id="ipassos" required value="1" placeholder="de quanto em quanto...">
             </p>
 
             <p>
             <input type="button" value="Aperte" onclick="msk()">
             </p>
-        <div id="msg" class="item"></div>
+        <div id="msg">
+            <p>preparando a contagem.....</p>
+        </div>
         <div id="foto" class="item"></div>
     </section>
     <footer>Site criado por Vitor Miguel &copy;</footer>
-    <script src="idade.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

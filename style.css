@@ -29,19 +29,16 @@ section{
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
     font-size: 1.5em;
-    text-align: center;
 }
 p{
     text-align: left;
 }
 #foto{
-    width: 30vw;
-    height: 30vh;
-    background-color: red;
-    margin-left: 25vw;
-    border-radius: 100px;
-    background-size: cover;
-    background-image: url();
+    width: 40vw;
+    height: 10vh;
+    background-color: aqua;
+    opacity: 0;
+    color: black;
 }
 footer{
     display: flex;
@@ -51,7 +48,4 @@ footer{
     align-items: center;
     color: rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
-}
-.item{
-    opacity: 0;
 }
